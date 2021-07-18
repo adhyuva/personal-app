@@ -1,5 +1,7 @@
 body{
-    padding:10px
+    padding:10px;
+    background-color:black;
+    color:white;
 }
 input{
     width:750px !important;

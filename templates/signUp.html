@@ -11,30 +11,28 @@
 </head>
 <body>
     <h1>SIGN UP</h1>
-    <form>
+    <form action= '/createAccount' method='POST'>
         <div class="mb-3">
           <label for="email" class="form-label">Email address(will act as username)</label>
-          <input type="email" class="form-control" id="email">
+          <input type="email" class="form-control" id="email" name="email">
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password">
+          <input type="password" class="form-control" id="password" name="password">
         </div>
         <div class="mb-3">
             <label for="dateOfBirth" class="form-label">Date Of Brith</label>
-            <input type="date" class="form-control" id="dateOfBirth">
+            <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth">
           </div>
           <div class="mb-3">
               <label for="hobby" class="form-label">Hobby</label>
-              <input type="text" class="form-control" id="hobby">
+              <input type="text" class="form-control" id="hobby" name="hobby">
             </div>
           <div class="mb-3">
-            <label for="color" class="form-label">Favortie Color</label>
-            <input type="text" class="form-control" id="color">
+            <label for="color" class="form-label">Favorite Color</label>
+            <input type="text" class="form-control" id="color" name="color">
           </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Create Account</button>
       </form>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
