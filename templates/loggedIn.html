@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
     <link rel="stylesheet" href="../static/style.css">
-    <title>Logged In</title>
+    <title>Login Template Mainpage</title>
 </head>
 <body>
     <h1>You Have Successfully Logged In!</h1>
     <h2>Hello, </h2>
-    <h3>Your Hobby is</h3>
-    <h3>Your Favorite Color is</h3>
-    <h3>Your Date Of Birth is</h3>
+    {% if user.hobby %}
+    <h3>Your Hobby is {{ user.hobby | safe }}</h3>
+    {% endif %}
+    {% if user.favoriteColor %}
+    <h3>Your favorite color is {{ user.favoriteColor | safe }}</h3>
+    {% endif %}
+    {% if user.dateOfBirth %}
+    <h3>And you were born on {{ user.dateOfBirth | safe }}</h3>
+    {% endif %}
+    
     <h3></h3>
 </body>
 </html>
